@@ -97,7 +97,7 @@ const getNewQuestion = function () {
     if (questionCounter >= maxQuestions || avaliableQuestions.length === 0 ) {
         localStorage.setItem('mostRecentScore', score);
         
-        return window.location.assign("/submit.html");
+        return window.location.assign("./submit.html");
     }
 
 // Increases counter from 0 by 1
