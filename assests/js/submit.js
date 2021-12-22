@@ -11,7 +11,7 @@ const mostRecentScore = localStorage.getItem('mostRecentScore');
 //Initialises an empty array is produced
 const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 
-const maxHighScores = 50; 
+const MAX_HIGH_SCORES = 50; 
 
 finalScore.innerText = mostRecentScore;
 
