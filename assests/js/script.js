@@ -93,6 +93,7 @@ function startQuiz () {
 const getNewQuestion = function () {
 
     if (questionCounter >= maxQuestions ) {
+        localStorage.setItem('recentScore', score);
         endGame();
     }
 
@@ -188,3 +189,17 @@ function endGame () {
 
 //Submit page script
 
+const username = document.getElementById("username");
+const saveScore = document.getElementById("save-score");
+
+//Collecting most recent score using 'getItem'
+const recentScore = localStorage.getItem("recentScore");
+const finalScore = document.getElementById("final-score");
+
+username.addEventListener("keyup", function (event) {
+    saveScore.disabled = !username.value;
+})
+
+saveHighScore ( function (event) {
+    event.preventDefault();
+})
