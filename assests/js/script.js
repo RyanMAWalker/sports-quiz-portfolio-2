@@ -85,6 +85,10 @@ function startQuiz () {
 
 const getNewQuestion = function () {
 
+    if (questionCounter >= maxQuestions ) {
+        endGame();
+    }
+
 // Increases counter from 0 by 1
     questionCounter++; 
 
@@ -110,16 +114,30 @@ const getNewQuestion = function () {
 
 };
 
-/**
- * 
- */
+
 answersOptions.forEach(function(answersOptions){
     answersOptions.addEventListener("click", function (event) {
-        console.log(event.target);
+        if(!acceptingAnswers)return;
+
+        acceptingAnswers = false;
+
+        let selectedOption = event.target;
+        
+        //Reads the selected data-number of the user's target and locally stores it
+        let selectedAnswer = selectedOption.dataset["number"]
+
+        console.log(selectedAnswer);
+        //Calls new question from the now reduced array
+        getNewQuestion();
     })
 })
 
 startQuiz();
+
+//ending the game function send user to the submit score page.
+function endGame () {
+    return window.location.assign("/submit.html");
+}
 
 
 

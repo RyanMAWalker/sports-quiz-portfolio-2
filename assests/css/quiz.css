@@ -67,6 +67,7 @@
 
 .answer-text {
     padding: 1rem;
+    width: 100%;
 }
 
 /* Style for the progression bar */
