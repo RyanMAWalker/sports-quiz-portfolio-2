@@ -4,8 +4,19 @@
 * {
     /* Font size set to 62.5% for 1rem = 10px */
     font-size: 62.5%;
+
+    /* font family imported from google fonts */
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     border: none;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(..//images/blue-white.webp);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    width: 100%;
 }
 
