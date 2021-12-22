@@ -15,6 +15,9 @@ const answersOptions = Array.from(document.getElementsByClassName("answer-text")
 const counterText = document.getElementById("counter");
 const scoreText = document.getElementById("score");
 
+//Progess bar reference
+const progressBar = document.getElementById("full-bar");
+
 //To start quiz function I need questions to define in the form of an array
 
 let questions = [
@@ -98,6 +101,8 @@ const getNewQuestion = function () {
     
     counterText.innerText = `${questionCounter}/${maxQuestions}`
 
+    fullProgressBar();
+
 //Generates a random number from the avaliable questions array defined in the startQuiz function.
 //.length specifies the number of questions avaliable from [...questions]
     const questionIndex = Math.floor(Math.random() * avaliableQuestions.length);
@@ -138,6 +143,7 @@ answersOptions.forEach(function(answersOptions){
         const classToApply = selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
         selectedOption.parentElement.classList.add(classToApply);
 
+        //Increases score by 10
         if (classToApply === 'correct') {
             increaseScore(correctAnswer);
         }
@@ -155,11 +161,24 @@ answersOptions.forEach(function(answersOptions){
     })
 })
 
+/**
+ * Increases score
+ */
 function increaseScore(num) {
     score += num;
     scoreText.innerText = score;
 }
 
+/**
+ * Updates progress bar
+ */
+function fullProgressBar (){
+    progressBar.style.width = `${(questionCounter / maxQuestions) * 100}%`;
+}
+
+/**
+ * Starts the game
+ */
 startQuiz();
 
 //ending the game function send user to the submit score page.

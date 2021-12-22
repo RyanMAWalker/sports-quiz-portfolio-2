@@ -74,10 +74,19 @@
 /* Style for the progression bar */
 
 .progress-bar {
-    background-color: green;
-    padding: 1rem;
+    width: 100%;
     border-radius: 10rem;
+    height: 3rem;
 }
+
+#full-bar {
+    background: green;
+    height: 3rem;
+    border-radius: 10rem;
+    border: 0.3rem solid white;
+    width: 0%;
+}
+
 
 .correct {
     background: green;
