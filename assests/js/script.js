@@ -138,6 +138,10 @@ answersOptions.forEach(function(answersOptions){
         const classToApply = selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
         selectedOption.parentElement.classList.add(classToApply);
 
+        if (classToApply === 'correct') {
+            increaseScore(correctAnswer);
+        }
+
 
         //Removes the class after a time invterval of 2 seconds and calls new questions
         setTimeout(undoFill,2000);
@@ -150,6 +154,11 @@ answersOptions.forEach(function(answersOptions){
                 
     })
 })
+
+function increaseScore(num) {
+    score += num;
+    scoreText.innerText = score;
+}
 
 startQuiz();
 
