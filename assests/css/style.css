@@ -20,6 +20,10 @@ body {
     width: 100%;
 }
 
+h1, h3 {
+    margin-bottom: 2rem;
+}
+
 /* h1 and p style below is temporary to be able to style the whole page */
 /* Font sizing taken from https://w3-lab.com/website-font-size-guidelines/ */
 h1 {
@@ -44,11 +48,18 @@ h3 {
 /* Flex container styling */
 
 .flex-container {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vw;
 
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    
+    flex-direction: column;
+}
 
+#home-container {
+    display: flex;
+    flex-direction: column;
 }
