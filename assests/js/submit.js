@@ -12,8 +12,6 @@ const mostRecentScore = localStorage.getItem('mostRecentScore');
 //Initialises an empty array is produced
 const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 
-const MAX_HIGH_SCORES = 50; 
-
 finalScore.innerText = mostRecentScore;
 
 //Set to disabled unless the input username section is populated.
