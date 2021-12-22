@@ -125,10 +125,22 @@ answersOptions.forEach(function(answersOptions){
         
         //Reads the selected data-number of the user's target and locally stores it
         let selectedAnswer = selectedOption.dataset["number"]
+        
+        //Comparrison between user's selected answer and the correct answer
+        //which assigns an 'incorrect' or 'correct' which allows a CCS style to
+        //be applied for visiual representation. 
+        const classToApply = selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
+        selectedOption.parentElement.classList.add(classToApply);
 
-        console.log(selectedAnswer);
-        //Calls new question from the now reduced array
-        getNewQuestion();
+        //Removes the class after a time invterval of 2 seconds and calls new questions
+        setTimeout(undoFill,2000);
+
+        function undoFill(){
+            selectedOption.parentElement.classList.remove(classToApply);
+            //Calls new question from the now reduced array
+            getNewQuestion();
+        };
+                
     })
 })
 
