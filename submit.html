@@ -10,11 +10,12 @@
 
     <!--File link to CSS-->
     <link rel="stylesheet" href="assests/css/style.css">
+    <link rel="stylesheet" href="assests/css/submit.css">
 
     <!-- Google Fonts Roboto font link-->
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
-    <!-- Fav Icon of trophy link code line 19 
+    <!-- Fav Icon of trophy link code line 20
         taken from Code Institute "Love Maths" project walkthrough-->
     <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
 
@@ -23,13 +24,17 @@
 
 <body>
     <div class="flex-container">
-        <div id="home-container">
-            <h1>Sports Quiz of 2021!</h1>
-            <h3>Can you prove your sporting knowledge of 2021?</h3>               
-            <a href="quiz.html" class="btn">Click to Begin the Quiz!</a>
-            <a href="" class="btn">Click to see the HighScores</a>
+        <div class="submit-container">
+            <h2 id="sumbit-heading">Congratulations! You scored:</h2>
+            <div id="final-Score">0</div>
+            <h2 id="sub-header">Enter your name below to save your score!</h2>
+            <form>
+                <input type="text" name="username" id="username" placeholder="Enter your name here">
+                <button type="submit" class="btn" id="save-score">Click to Save</button>
+                <button type="submit" class="btn" id="home-screen">Click to Play Again!</button>
+                <button type="submit" class="btn" id="high-scores">Click to go to HighScores</button>
+            </form>
         </div>
-
     </div>
 
 </body>
