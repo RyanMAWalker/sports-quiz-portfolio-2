@@ -186,5 +186,5 @@ function endGame () {
     return window.location.assign("/submit.html");
 }
 
-
+//Submit page script
 
