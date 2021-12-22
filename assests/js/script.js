@@ -96,9 +96,28 @@ const getNewQuestion = function () {
 // inputs the text of the "pulled" question
     question.innerText = currentQuestion.question; 
 
+//inputs the answer for the question pulled above
+
+    answersOptions.forEach(function (answersOptions){
+        const number = answersOptions.dataset['number'];
+        answersOptions.innerText = currentQuestion['option'+ number]
+    });
+
 //Removes the question just used
     avaliableQuestions.splice(questionIndex, 1); 
-    };
+
+    acceptingAnswers = true;
+
+};
+
+/**
+ * 
+ */
+answersOptions.forEach(function(answersOptions){
+    answersOptions.addEventListener("click", function (event) {
+        console.log(event.target);
+    })
+})
 
 startQuiz();
 
