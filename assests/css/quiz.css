@@ -1,11 +1,67 @@
-/*Temporary color while styling */
-
-.flex-container h1, h2, h3, p{
-    color: red;
-}
-
 .game-info {
     display: flex;
     justify-content: space-around;
-    width: 100%;
+    width: 100vw;
+    margin-bottom: 0rem;
+    padding: 0rem;
+    margin-top: 5rem;
+    font-weight: 700;
 }
+
+.prefix {
+    font-size: 1.6rem;
+    margin-bottom: 0rem;
+    background-color: rgba(0,0,52,255);
+    padding: 1rem 1rem 0rem 1rem;
+   
+}
+
+#counter, #score {
+    font-size: 2.4rem; 
+    background-color: rgba(0,0,52,255);
+    padding: 0rem 1rem 1rem 1rem;
+}
+
+.quiz-container {
+
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0,52,255);
+    padding: 2rem;
+    border-radius: 2rem;
+    width: 80%;
+    color: #FFFFFF;
+}
+
+.answer-container {
+    display: flex;
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 0rem;
+    margin-bottom: 1rem;
+    border-radius: 5rem;
+    border: 0.2rem solid gold;
+}
+
+.answer-container > p {
+    color: rgba(0,0,52,255);
+}
+
+.answer-container:hover {
+    background-color: gold;
+}
+
+
+
+.answer-prefix {
+    padding: 1rem;
+    border-radius: 5rem;
+    background-color: gold;
+}
+
+.answer-text {
+    padding: 1rem;
+}
+
+
