@@ -20,3 +20,23 @@ body {
     width: 100%;
 }
 
+/* h1 and p style below is temporary to be able to style the whole page */
+/* Font sizing taken from https://w3-lab.com/website-font-size-guidelines/ */
+h1 {
+    font-size: 4.8rem;
+    margin-bottom: 3rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 3.6rem;
+    margin-bottom: 3rem;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+}
