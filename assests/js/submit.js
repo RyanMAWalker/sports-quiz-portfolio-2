@@ -1,3 +1,5 @@
+// Code base for highscores taken from youtube video https://www.youtube.com/watch?v=f4fB9Xg2JEY
+
 const username = document.querySelector('#username')
 const saveScoreBtn = document.querySelector('#saveScoreBtn')
 const finalScore = document.querySelector('#finalScore')
