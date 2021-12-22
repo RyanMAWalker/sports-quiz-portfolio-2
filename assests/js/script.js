@@ -11,6 +11,10 @@ const question = document.getElementById("question");
 //convert the string of answers to an array
 const answersOptions = Array.from(document.getElementsByClassName("answer-text"));
 
+// Get question counter and score
+const counterText = document.getElementById("counter");
+const scoreText = document.getElementById("score");
+
 //To start quiz function I need questions to define in the form of an array
 
 let questions = [
@@ -90,7 +94,9 @@ const getNewQuestion = function () {
     }
 
 // Increases counter from 0 by 1
-    questionCounter++; 
+    questionCounter++;
+    
+    counterText.innerText = `${questionCounter}/${maxQuestions}`
 
 //Generates a random number from the avaliable questions array defined in the startQuiz function.
 //.length specifies the number of questions avaliable from [...questions]
@@ -131,6 +137,7 @@ answersOptions.forEach(function(answersOptions){
         //be applied for visiual representation. 
         const classToApply = selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
         selectedOption.parentElement.classList.add(classToApply);
+
 
         //Removes the class after a time invterval of 2 seconds and calls new questions
         setTimeout(undoFill,2000);
