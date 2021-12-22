@@ -7,6 +7,7 @@ const saveScoreBtn = document.querySelector('#saveScoreBtn');
 const finalScore = document.querySelector('#finalScore');
 const mostRecentScore = localStorage.getItem('mostRecentScore');
 
+
 //Converts high scores recieved from local storage and converts into an array or if returns null
 //Initialises an empty array is produced
 const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
@@ -43,3 +44,9 @@ saveHighScore = e => {
     window.location.assign('/');
 };
 
+// quit button 
+const quitBtn = document.getElementById("homepage");
+
+quitBtn.addEventListener('onclick', () => {
+    sessionStorage.clear()
+});
