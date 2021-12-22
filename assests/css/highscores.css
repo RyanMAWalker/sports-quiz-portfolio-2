@@ -1,0 +1,11 @@
+.highscores-container {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 52, 255);
+    padding: 2rem;
+    border-radius: 2rem;
+    width: 80%;
+    color: #FFFFFF;
+}
+
