@@ -56,7 +56,7 @@
 }
 
 .answer-container:hover {
-    background-color: gold;
+    transform: scale(1.1);
 }
 
 .answer-prefix {
@@ -68,6 +68,7 @@
 .answer-text {
     padding: 1rem;
     width: 100%;
+    cursor: pointer;
 }
 
 /* Style for the progression bar */
@@ -78,4 +79,10 @@
     border-radius: 10rem;
 }
 
+.correct {
+    background: green;
+}
 
+.incorrect {
+    background: red;
+}
