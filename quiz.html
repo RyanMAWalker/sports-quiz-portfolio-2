@@ -11,11 +11,13 @@
     <!--File link to CSS-->
     <link rel="stylesheet" href="assests/css/style.css">
     <link rel="stylesheet" href="assests/css/quiz.css">
+    
+    
 
     <!-- Google Fonts Roboto font link-->
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
-    <!-- Fav Icon of trophy link code line 19 
+    <!-- Fav Icon of trophy link code line 20 
         taken from Code Institute "Love Maths" project walkthrough-->
     <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
 
@@ -23,7 +25,53 @@
 </head>
 
 <body>
-    <h1>Test page</h1>
+    <!--Flexbox for whole body-->
+    <div class="flex-container">
+
+        <!-- Game information section, this includes current question
+        number, score -->
+        <div class="game-info">
+            <div class="counter">
+                <h3 class="prefix">Question Number:</h3>
+                <p id="counter">1/X</p>
+            </div>
+            <div class="score">
+                <h3 class="prefix">Score:</h3>
+                <p id="score">1</p>
+            </div>
+        </div>
+
+        <!--Question section this displays questions and multiple 
+        choice answers-->
+        <div class="quiz-container">
+            <h2 id="question">What is the answer?</h2>
+            <div class="answer-container">
+                <p class="answer-prefix">A</p>
+                <p class="answer-text">Answer A</p>
+            </div>
+            <div class="answer-container">
+                <p class="answer-prefix">B</p>
+                <p class="answer-text">Answer B</p>
+            </div>
+            <div class="answer-container">
+                <p class="answer-prefix">C</p>
+                <p class="answer-text">Answer C</p>
+            </div>
+            <div class="answer-container">
+                <p class="answer-prefix">D</p>
+                <p class="answer-text">Answer D</p>
+            </div>
+
+            <!--Progress bar fills as the quiz is completed-->
+            <div class="progess-container">
+                <div class="progress-bar">
+                    <p id="fill-bar">This is the progress bar!</p>
+                </div>
+            </div>
+        </div>        
+
+    </div>
+    
 
     <script src="assests/js/script.js"></script>
 </body>
