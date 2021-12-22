@@ -25,13 +25,27 @@
     <div class="flex-container">
         <div id="home-container">
             <h1>Sports Quiz of 2021!</h1>
-            <h3>Can you prove your sporting knowledge of 2021?</h3>               
+            <h3>Can you prove your sporting knowledge of 2021?</h3>
             <a href="quiz.html" class="btn">Click to Begin the Quiz!</a>
             <a href="highscores.html" class="btn" id="highScoresList">Click to see the HighScores</a>
+            <button id="myBtn" class="btn">Open Rules</button>
+            <div class="modal" id="myModal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <ul>
+                        <li>Click on an answer once to move on to the next question, there is a 2 second delay between selection and moving on to the next question</li>
+                        <li>Answers will turn <span id="green">Green</span> if correct or <span id="red">Red</span> if incorrect</li>
+                        <li>Correct answers are worth 10 points each</li>
+                        <li>To be on the leaderboard make sure to put your name and click save once the question is complete</li>
+                        <li>Click the cross "<span id="red">X</span>" above to close this window. </li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
 
     </div>
-
+    <script src="assests/js/index.js"></script>
 </body>
 
 </html>

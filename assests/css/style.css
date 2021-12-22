@@ -92,6 +92,60 @@ h3 {
     border: solid #FFFFFF;
 }
 
+/* Modal styling taken from w3schools.com https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal */ 
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 0rem;
+    width: auto;
+    height: auto;
+    overflow: auto; 
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    margin-right: 30%;
+    margin-top: 10rem;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: rgba(0,0,52,255);
+    margin: auto;
+    padding: 2rem;
+    border: 1px solid #FFFFFF;
+    border-radius: 2rem;
+    width: 100%;
+    font-size: 4rem;
+  }
+
+#green {
+    color: green;
+    font-size: 2rem;
+}
+
+#red {
+    color: red;
+    font-size: 2rem;
+}
+
+  /* The Close Button */
+.close {
+    color: red;
+    display: flex;
+    justify-content: center;
+    font-size: 3.6rem;
+    font-weight: bold;
+  }
+
+  .close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+  
+
 @media screen and (max-width: 700px){
     .website{
         margin-top: -8rem;
@@ -100,6 +154,12 @@ h3 {
     .quiz-container {
         width: 100%;
     }
+
+    .submit-container {
+        width: 100% !important;
+    }
+
+    
 
     h1 {
         font-size: 3.6rem;
@@ -115,6 +175,16 @@ h3 {
     }
 
     .btn {
+        padding: 0.5rem;
+        font-size: 1.6rem;
+        margin-top: 1rem;
+    }
+
+    .modal {
+        margin-right: 0rem;
+    }
+
+    #username {
         padding: 0.5rem;
         font-size: 1.6rem;
         margin-top: 1rem;

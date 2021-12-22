@@ -48,5 +48,5 @@ saveHighScore = e => {
 const quitBtn = document.getElementById("homepage");
 
 quitBtn.addEventListener('onclick', () => {
-    sessionStorage.clear()
+    localStorage.clear();
 });
