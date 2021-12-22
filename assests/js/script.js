@@ -88,7 +88,7 @@ function startQuiz () {
     score = 0;
     questionCounter = 0;
     avaliableQuestions = [ ... questions];
-    console.log(avaliableQuestions)
+    console.log(avaliableQuestions);
     getNewQuestion();
 }
 
@@ -118,7 +118,7 @@ const getNewQuestion = function () {
 //inputs the answer for the question pulled above
 
     answersOptions.forEach(function (answersOptions){
-        const number = answersOptions.dataset['number'];
+        const number = answersOptions.dataset.number;
         answersOptions.innerText = currentQuestion['option'+ number];
     });
 
@@ -139,7 +139,7 @@ answersOptions.forEach(function(answersOptions){
         let selectedOption = event.target;
         
         //Reads the selected data-number of the user's target and locally stores it
-        let selectedAnswer = selectedOption.dataset["number"];
+        let selectedAnswer = selectedOption.dataset.number;
         
         //Comparrison between user's selected answer and the correct answer
         //which assigns an 'incorrect' or 'correct' which allows a CCS style to
