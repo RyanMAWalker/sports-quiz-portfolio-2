@@ -1,7 +1,9 @@
+/*jshint esversion: 6 */
+
 //Wait for DOM to finish loading the quiz
 document.addEventListener("DOMcontentLoaded", function () {
     startQuiz();
-})
+});
 
 //List of references
 
@@ -61,7 +63,7 @@ let questions = [
         option4: "Maria Sakkari",
         answer: 3
     },
-]
+];
 
 //Define variables
 
@@ -85,7 +87,7 @@ const correctAnswer = 10;
 function startQuiz () {
     score = 0;
     questionCounter = 0;
-    avaliableQuestions = [ ... questions]
+    avaliableQuestions = [ ... questions];
     console.log(avaliableQuestions)
     getNewQuestion();
 }
@@ -101,7 +103,7 @@ const getNewQuestion = function () {
 // Increases counter from 0 by 1
     questionCounter++;
     
-    counterText.innerText = `${questionCounter}/${maxQuestions}`
+    counterText.innerText = `${questionCounter}/${maxQuestions}`;
 
     fullProgressBar();
 
@@ -117,7 +119,7 @@ const getNewQuestion = function () {
 
     answersOptions.forEach(function (answersOptions){
         const number = answersOptions.dataset['number'];
-        answersOptions.innerText = currentQuestion['option'+ number]
+        answersOptions.innerText = currentQuestion['option'+ number];
     });
 
 //Removes the question just used
@@ -137,7 +139,7 @@ answersOptions.forEach(function(answersOptions){
         let selectedOption = event.target;
         
         //Reads the selected data-number of the user's target and locally stores it
-        let selectedAnswer = selectedOption.dataset["number"]
+        let selectedAnswer = selectedOption.dataset["number"];
         
         //Comparrison between user's selected answer and the correct answer
         //which assigns an 'incorrect' or 'correct' which allows a CCS style to
@@ -158,10 +160,10 @@ answersOptions.forEach(function(answersOptions){
             selectedOption.parentElement.classList.remove(classToApply);
             //Calls new question from the now reduced array
             getNewQuestion();
-        };
+        }
                 
-    })
-})
+    });
+});
 
 /**
  * Increases score
