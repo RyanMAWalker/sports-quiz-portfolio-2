@@ -267,13 +267,78 @@ For the testing I carried out html, CSS, JS validation tests before and after de
 * [The only warning accross all pages was the repeat use the the ID "red" which was subsequently changed to a class](assests/images/testing/preDployHTML.png)
 #### CSS
 * Reoccurring warning that I have chosen to ignore as the issue is regarding the [blue color used](assests/images/testing/preDployCSS2.png) I didn't notice when using the color picker tool that it had produce 4 parameters for the rgba code, however because this had been working I didn't realise until validation. The color works so I've foregone changing it.
-#### JS
+#### JavaScript
 * Inital [error](assests/images/testing/preDeployJS1.png) was in relation to ES6 to overcome this all my JavaScript has the following line added "/* jshint esversion6 */" which makes the validator recognise es6 functionality such as template literals. 
 * Constant warning of [missing semi-colons](assests/images/testing/preDeployJS2.png) fixed and will be shown the in deployment section.
 
 ### Deployment 
 #### HTML 
 * [link to Index page test result](https://validator.w3.org/nu/?doc=https%3A%2F%2Fryanmawalker.github.io%2Fsports-quiz-portfolio-2%2Findex.html)
+* [link to Quiz page test result](https://validator.w3.org/nu/?doc=https%3A%2F%2Fryanmawalker.github.io%2Fsports-quiz-portfolio-2%2Fquiz.html)
+* [link to submission page test result](https://validator.w3.org/nu/?doc=https%3A%2F%2Fryanmawalker.github.io%2Fsports-quiz-portfolio-2%2Fsubmit.html)
+* [link to high score test result](https://validator.w3.org/nu/?doc=https%3A%2F%2Fryanmawalker.github.io%2Fsports-quiz-portfolio-2%2Fhighscores.html)
+* All HTML validation tests returned as no issues
+![example html validation](assests/images/testing/htmlValid1.png)
 
+#### CSS
+* To note all warnings are in relation to the color and font awesome link ref which was taken directly from the font awesome page.
+* [link to style.css test result](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fryanmawalker.github.io%2Fsports-quiz-portfolio-2%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+* [link to quiz.css test result](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fryanmawalker.github.io%2Fsports-quiz-portfolio-2%2Fquiz.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+* [link to submit.css test result](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fryanmawalker.github.io%2Fsports-quiz-portfolio-2%2Fsubmit.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+* [link to highscore.css test result](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fryanmawalker.github.io%2Fsports-quiz-portfolio-2%2Fhighscores.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+![image showing no errors](assests/images/testing/cssnoerror.png)
 
+#### JavaScript
+* Tested using JSHint post depolyment had no additional issues from predeployment
+![JSHint img 1](assests/images/testing/indexJSHint.png)
+![JSHint img 2](assests/images/testing/scriptJSHint.png)
+![JSHint img 3](assests/images/testing/scriptJSHint.png)
+![JSHint img 4](assests/images/testing/highscoresJSHint.png)
 
+## Performance Results 
+
+The performance was tested on each page and an additional performance was carried out after each question had been answered all achieving very high performance results.
+
+* Worst performance result was the quiz page
+![performance img](assests/images/testing/quizPerformance.png)
+
+* [Home page performance](assests/images/testing/homepagePerformance.png)
+* [Quiz page performance](assests/images/testing/quizPerformance.png)
+* [Quiz page Q4 performance](assests/images/testing/quizpageQ4Performance.png)
+* [Submission page performance](assests/images/testing/submitPagePerformance.png)
+* [High scores page perforamnce](assests/images/testing/highscorePagePerformance.png)
+
+<h1 align="center">Deployment</h1>
+
+I Deployed the page on GitHub pages via the following procedure:
+* From the project repository got to settings.
+* Scroll down to the bottom of the page, underneath GitHub Pages is a link to it's own dedicated tab. Or alternatively select Pages from the menu of the left hand side.
+* Under the Source click the drop down menu, select main and click save.
+* A message will appear to show sucessful deployment and a link will appear.
+
+To access the live site click the following link - [Sports Quiz 2021 live site](https://ryanmawalker.github.io/sports-quiz-portfolio-2/index.html)
+
+<h1 align="center">Credits</h1>
+
+## Content
+
+* Color picker [IMAGECOLORPICKER.com](https://imagecolorpicker.com/)
+* How rem font scaling works [sitepoint.com](https://www.sitepoint.com/understanding-and-using-rem-units-in-css/)
+* innerHTML onclick events [stackoverflow](https://stackoverflow.com/questions/31876652/click-event-on-innerhtml-generated-div/31876859)
+* The rules modal was taken from w3school using the following [link](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal)
+* A lot of the JavaScript material was taken following these 3 youtube videos [video 1](https://www.youtube.com/watch?v=icb9AUBeznQ), [video 2](https://www.youtube.com/watch?v=f4fB9Xg2JEY) and [video 3](https://www.youtube.com/watch?v=MxrGPP4F8Sc)
+* Flex display / flexbox manipulation [video 3](https://www.youtube.com/watch?v=MxrGPP4F8Sc) and [css-tricks.com](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+* Hover transition [css-tricks.com](https://css-tricks.com/snippets/css/scale-on-hover-with-webkit-transition/)
+* BAckground image from [shutterstock](https://www.shutterstock.com/)
+* Copyright icon from [Font Awesome](https://fontawesome.com/)
+* All Fonts imported from [Google Fonts](https://fonts.google.com/)
+* As a general reference material [W3Schools](https://www.w3schools.com/) was used.
+* As reference for my README I used my previous project [The depths of Ebonshade](https://github.com/RyanMAWalker/Depths-of-Ebonshade)
+
+## Mentions
+
+- First mentoin the video tutorials from [Keep coding](https://www.youtube.com/watch?v=MxrGPP4F8Sc), [WEB HUB](https://www.youtube.com/watch?v=2jwdyO_UunE), [Brian Design](https://www.youtube.com/watch?v=f4fB9Xg2JEY) and espcially [Learn {to} Code](https://www.youtube.com/watch?v=icb9AUBeznQ)
+
+- My mentor Rahul Lakhanpal - For giving honest feedback, pointing out glaringly obvious things I had missed and directing me towards extra reading with stack overflow articles and a massive guidance in the concept stage.
+
+- My close personal friends - Harry Chapman, Joseph Ariss, Thomas Freeman and Nathan Elliot they (unknowingly) provided several devices as they all have different phones and operating systems to test the quiz on, but also provide really valued feedback as potential users.
