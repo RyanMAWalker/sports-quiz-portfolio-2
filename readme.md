@@ -46,7 +46,7 @@ View the live website on GitHub [Sports Quiz 2021](https://ryanmawalker.github.i
 |**Provide niche sporting information** | 5 | 5 |
 |**Provide a competitive experience** | 4 | 3 |
 
-### Wireframe mockups
+## Wireframe mockups
 To produce a basic mockup of the site layouts I used Balsamiq. 
 
 * [Home page wireframe](assests/images/design/wireframesHomepage.png)
@@ -55,13 +55,13 @@ To produce a basic mockup of the site layouts I used Balsamiq.
 * [Highscores page wireframe](assests/images/design/wireframesHighscores.png)
 
 
-### Design
+## Design
 
 Following the overall structure of the wireframes being established, I first researched other sports quiz websites to find what the current most popular sites are. In this case the most popular were all sections of news websites e.g. [The Guardian](https://www.theguardian.com/sport/series/sports-quiz-of-the-week), [The Independent](https://www.independent.co.uk/sport/gerwyn-price-tom-brady-anthony-joshua-australian-open-super-bowl-lv-b1977108.html) and [BBC Sport](https://www.bbc.co.uk/sport/59731273).
 
 From the above research I decided to take inspiration from popular free quiz apps such as "General Knowledge Quiz" by Trivia and "General Knowledge Trivia Quiz" by GK questions and answers game. Both of which have a simple and clear User Interface for the questions. 
 
-### Color Scheme
+## Color Scheme
 
 The color scheme design focus was based around the image I decided upon from the following shortlist from shutterstock:
 * [Blue and White](assests/images/blue-white.webp)
@@ -82,7 +82,7 @@ Standard Green and Red colors were used to show when a question was correct or i
 
 Green was used as the progress bar as it gave a hugh contrast to the rest of the colors across the website.
 
-### Typography
+## Typography
 
 The font used for all bodies of text was Roboto to carry a consistent visual and was imported from google fonts. 
 
@@ -170,7 +170,29 @@ Upon completion of the quiz the user is directed to the submission page which di
 * Option to return to the home page.
 * The score updates to the users total score from the current attempt. ![Submission page](assests/images/UiImages/submitPhone.png)
 
-## High
+## High Scores Page
+
+The user submits their name and is directed to this page. 
+
+* The current max users that will register on the highscores is 5.
+* Listen in order of score then in order of submission timing e.g. in the image below Ryan is Above bethan as Ryan submitted thier score before Bethan. 
+* If another person scores higher than the user at the bottom then the user at the bottom is removed from the score list and the higher scoring new user takes their place. ![highscore page](assests/images/UiImages/highscoresPC.png)
+
+<h1 align="center">Mobile Compatibility</h1>
+
+As noted in the design section a prority of this project is to ensure a good user experience on mobile devices. The use of flex box containers ensures a dynamic interface regardless of screen size. Media queries are added to do the following:
+
+* Adjust the vertical position of each page
+* Extend the content containers to full page width at 700px this was the tested cut off point using google chrome developer tools where the user's experience was worsened without media querying. 
+* Reduce font size
+* Reduce button size
+* Center the rules modal
+
+![homepage moblie](assests/images/UiImages/homeScreenIPhone.png)
+![quiz mobile](assests/images/UiImages/quiz1iPhone.png)
+![submission mobile](assests/images/UiImages/submitPhone.png)
+![highscores mobile](assests/images/UiImages/highscorePhone.png)
+
 
 
 
