@@ -121,6 +121,10 @@
     background: red;
 }
 
+footer {
+    margin-top: 2.4rem;
+}
+
 @media screen and (max-width: 700px){
     .website{
         margin-top: -8rem;
