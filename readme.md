@@ -193,6 +193,87 @@ As noted in the design section a prority of this project is to ensure a good use
 ![submission mobile](assests/images/UiImages/submitPhone.png)
 ![highscores mobile](assests/images/UiImages/highscorePhone.png)
 
+<h1 align="center">Future Improvements</h1>
+
+Compared to other online sports quizzes this project can be improved, there are additional features I would like to add as well however I'm not able to implement due to time constraints and it being my early attempts with JavaScript: 
+
+* Answer images - All sporting achievements are done as an individual or a team of people as such images could be used in conjunction with the athelete/team's name as an interactive option. 
+* User feedback form - This is something that I forgot to include in my mockups and subsequently only when writing out this list of future improvements I have now noticed it has been forgotten.
+* User question creation - An option for the user to submit their own questions however it would then bring about the problem of curation. 
+* Empty section of the progress bar - Currently the progress bar is all or nothing there's no empty section to represent how much further there is of the quiz. I had attempted this during the project however the interation between the two elements resulted in a stagger effect I was unable to fix.
+* Timer - An automated timer for each question which would discourage the googling of answers
+* Character limit to name submission - Currently there is no limit so in theory users could hold a key to infinty and that would be submitted and shown on the highscores.
+* Prevention of dev tools manipulation - Prevent users from changing the highscores in the chrome dev tools, I currently don't have the knowledge on how to do that and would look to add this in the near future once aquired.
+
+
+<h1 align="center">Bugs / Development Issues</h1>
+
+A lot of issues I had with JavaScript came down to misspelling of reference IDs or not linking to the correct id. Another reoccuring issue was incorrectly linking file paths examples and evidence of the issues are shown below:
+
+## JavaScript Issues
+
+* Initial understanding of the function I was writing were executing what I expected, for this I asked for both help from the code institute community on slack and to verbally go through/ discuss my friends on discord the people of which can be found in my mentions section.
+    - [link to slack screenshot](assests/images/slack.jpg)
+    - [link to discord messages](assests/images/discord.jpg)
+* By using the liveserver extension for gitpod I was able to react quickly to issues such as reference errors the error below took a signficant amount of time to learn that I had mispelled a reference
+
+    ![Ref error image](assests/images/bugs/refError.png)
+
+* One major issue I had was that the highscores weren't updating so to over come this I console logged each step to find no fault and the application was doing what was expected, the error again came from that I used the incorrect reference ID in the button that was calling it the process of determining this error can be found below: 
+    - [typenull issue](assests/images/bugs/typeNullHighScores.png)
+    - [step 1](assests/images/bugs/log1.png)
+    - [step 2](assests/images/bugs/log2.png)
+    - [step 3](assests/images/bugs/log3.png)
+    - [step 4](assests/images/bugs/log4.png)
+    - [step 5](assests/images/bugs/log5.png)
+    - [step 6](assests/images/bugs/log6.png)
+    - [step 7](assests/images/bugs/log7.png)
+    - [step 8](assests/images/bugs/log8.png)
+    - [step 9](assests/images/bugs/log9.png)
+    - [step 10](assests/images/bugs/log10.png)
+    - [step 11](assests/images/bugs/log11.png)
+    - [step 12](assests/images/bugs/log12.png)
+
+## Developer Caused Issues
+
+* During this project I learnt the hard way about ensuring regular git pushes. As I lost 5 days of development time by forgetting to push my code and closing everything. I attempted to force push all to regain my lost work however it was unsuccesful and I determined that going forward it was better to re-write everything with a fresh repository as it also allowed myself to pick up on any additional errors I missed first time around or improve upon what I now consider to be a "first draft"
+
+<h1 align="center">Testing</h1>
+
+For the testing I carried out html, CSS, JS validation tests before and after deployment. I also shared the quiz in facebook chats I'm apart of to get feedback on what users enjoyed or didn't. This also allowed me to have multiple devices test this with varying users so bugs would be prominent.
+
+## Devices Tested On
+
+
+* Macbook Pro
+* iPhone XR
+* iPhone XS
+* iPhone 12
+* Google Pixel 5
+* Windows PC 1920 * 1080
+
+## Feedback
+
+* Permission has been given to share the group chat messages of user feedback.
+* [First some of the pages came back with errors](assests/images/feedback/publicTest1.png) this was fixed by changing the filepaths.
+* [Second position of the close icon for rules](assests/images/feedback/feedBack1.png).
+* [Third on mobile the previous option stays enlarged](/workspace/sports-quiz-portfolio-2/assests/images/feedback/feedback2-bug.png) this has yet to be fixed and is in the future development section. 
+
+## Validation Results
+
+### Predeployment
+
+#### HTML 
+* [The only warning accross all pages was the repeat use the the ID "red" which was subsequently changed to a class](assests/images/testing/preDployHTML.png)
+#### CSS
+* Reoccurring warning that I have chosen to ignore as the issue is regarding the [blue color used](assests/images/testing/preDployCSS2.png) I didn't notice when using the color picker tool that it had produce 4 parameters for the rgba code, however because this had been working I didn't realise until validation. The color works so I've foregone changing it.
+#### JS
+* Inital [error](assests/images/testing/preDeployJS1.png) was in relation to ES6 to overcome this all my JavaScript has the following line added "/* jshint esversion6 */" which makes the validator recognise es6 functionality such as template literals. 
+* Constant warning of [missing semi-colons](assests/images/testing/preDeployJS2.png) fixed and will be shown the in deployment section.
+
+### Deployment 
+#### HTML 
+* [link to Index page test result](https://validator.w3.org/nu/?doc=https%3A%2F%2Fryanmawalker.github.io%2Fsports-quiz-portfolio-2%2Findex.html)
 
 
 
